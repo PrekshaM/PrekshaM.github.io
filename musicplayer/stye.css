@@ -26,36 +26,36 @@ div{
 }
 
 .a{
-  background-image: url('img/1e.jpg');
+  background-image: url('1e.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .b{
-background-image: url('img/2e.jpg');
+background-image: url('2e.jpg');
 background-size: 100% 100%;
 background-repeat: no-repeat;
 }
 
 .c{
-background-image: url('img/3e.jpg');
+background-image: url('3e.jpg');
 background-size: 100% 100%;
 background-repeat: no-repeat;
 }
 
 .d{
-background-image: url('img/4e.jpg');
+background-image: url('4e.jpg');
 background-size: 100% 100%;
 background-repeat: no-repeat;
 }
 
 .e{
-background-image: url('img/5e.jpg');
+background-image: url('5e.jpg');
 background-size: 100% 100%;
 background-repeat: no-repeat;
 }
 .f{
-background-image: url('img/6e.jpg');
+background-image: url('6e.jpg');
 background-size: 100% 100%;
 background-repeat: no-repeat;
 }
