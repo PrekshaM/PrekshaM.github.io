@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="widht=device-width, initial-scale=1">
+
+</head>
+<body>
+	<div class="abc">
+				<img src="logo.png" style="width: 90px;height: 80px;padding-left: 700px">
+		
+	<h1> <center><font color="black" size="10px">GSSS Institute OF Engineering & Technology for Women,Mysuru <br> </font></center> </h1>
+</div>
+
+	<h1><center><font size="5px"  > <br>COMPUTER SCIENCE & ENGINEERING <br><br>Placement Registration form</font></center></h1>
+	<section style="padding-left: 610px" >
+	<br><br>
+	<div class="box">
+		<div class="aaa">
+			<form action="#" onsubmit="return validation()" > 
+				<div class="formgroup">
+					<br><br>
+					&nbsp;Name :&emsp;&nbsp; <input type="text" name="Username" class="form-control" id="user" > 
+										<br><span id="username" style="color: red;size: 5px"></span>
+
+
+				</div>
+				<div class="formgroup">		<br><br>&nbsp;Semester : <select >
+					<option value="">----Select Semester----</option>
+					<option value="5th Semester">5th Semester</option>
+					<option value="6th Semester">6th Semester</option>
+
+					<option value="7th Semester">7th Semester</option>
+
+					<option value="8th Semester">8th Semester</option>
+
+
+				</select>
+
+										<span id="semester" style="color: red;size: 5px"></span><br><br>
+										</div>
+<div class="formgroup">		<br><br>&nbsp;USN : &emsp;&nbsp;&nbsp; <input type="text" name="USN" class="form-control" id="usn" autocomplete="off"><br>
+						<span id="usn1" style="color: red;size: 5px"></span>
+
+</div>
+<div class="formgroup">	<br><br>	&nbsp;e-mail : &emsp;&nbsp;<input type="text" name="email" class="form-control" id="mail" autocomplete="off"><br>
+						<span id="email" style="color: red;size: 5px"></span>
+
+</div>
+<div class="formgroup">		<br><br>&nbsp;Phone no : <input type="text" name="Contact" class="form-control" id="phone" autocomplete="off"><br>
+						<span id="phone_no" style="color: red;size: 5px"></span>
+
+</div>
+<div class="formgroup">		<br><br>&nbsp;Password : <input type="password" name="password" class="form-control" id="pass" autocomplete="off"><br>
+						<span id="password" style="color: red;size: 5px"></span>
+
+</div>
+<div class="formgroup">		<br><br><input type="submit" name="submit" value="submit" style="color: green" autocomplete="off">
+</div>
+
+			</form>
+			</div>
+	</div>
+			<script type="text/javascript">
+		function validation(){
+			var user = document.getElementById('user').value;
+
+			var usn = document.getElementById('usn').value;
+
+			var mail = document.getElementById('mail').value;
+			var phone = document.getElementById('phone').value;
+
+			var pass = document.getElementById('pass').value;
+
+			if(user==""){
+				document.getElementById('username').innerHTML=".&emsp;&emsp;&emsp;&emsp;&nbsp;**Please fill the feild**";
+				return false;
+			}
+
+
+
+			
+
+
+			if(usn==""){
+				document.getElementById('usn1').innerHTML=".&emsp;&emsp;&emsp;&emsp;&nbsp;**Please fill the feild**";
+				return false;
+			}
+
+
+			if(mail==""){
+				document.getElementById('email').innerHTML=".&emsp;&emsp;&emsp;&emsp;&nbsp;**Please fill the feild**";
+				return false;
+			}
+			if(mail.indexOf('@')<=0)
+			{
+				document.getElementById('email').innerHTML="**Invalid e-mail id**";
+				return false;
+			}
+			if((mail.charAt(mail.length-4)!='.') && (mail.charAt(mail.length-3)!='.'))
+			{
+				document.getElementById('mail').innerHTML="**Invalid e-mail id** ";
+				return false;
+			}
+
+
+			if(phone==""){
+				document.getElementById('phone_no').innerHTML=".&emsp;&emsp;&emsp;&emsp;&nbsp;**Please fill the feild**";
+				return false;
+			}
+			if(isNaN(phone))
+			{
+				document.getElementById('phone_no').innerHTML="&emsp;&emsp;&emsp;&emsp;**Characters are not allowed**";
+				return false;
+			
+			}
+			if(phone.length!=10)
+			{
+				document.getElementById('phone_no').innerHTML="&emsp;&emsp;&emsp;&emsp;&nbsp;**Enter 10 digits**";
+				return false;
+			}
+
+
+			if(pass==""){
+				document.getElementById('password').innerHTML=".&emsp;&emsp;&emsp;&emsp;&nbsp;**Please fill the feild**";
+				return false;
+			}
+			if((pass.length<=7) || (pass.length>20))
+			{
+				document.getElementById('password').innerHTML="&emsp;&emsp;**Password must contain atleast 8 characters**";
+				return false;
+			}
+		}
+
+
+
+	</script>
+		
+</section>
+
+
+	</body>
+	</html>
